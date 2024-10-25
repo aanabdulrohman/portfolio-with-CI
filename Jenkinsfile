@@ -7,6 +7,8 @@ pipeline {
           // sh("npm install")
           // echo ("end install")
         }
+      }
+        
       stages {
         stage('Test Script'){
           steps {
@@ -18,6 +20,6 @@ pipeline {
           }
         }
       }
-      }
+      
     }
 }
