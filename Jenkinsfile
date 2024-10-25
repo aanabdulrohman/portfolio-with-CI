@@ -7,6 +7,15 @@ pipeline {
           sh("npm install")
           echo ("end install")
         }
+        stage('Test Script'){
+          steps {
+            echo ("start script")
+            script {
+              for (int i = 0; i < 5; i++)
+              echo ("Script ${i}")
+            }
+          }
+        }
       }
     }
 }
