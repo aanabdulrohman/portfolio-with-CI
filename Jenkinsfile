@@ -4,6 +4,13 @@ pipeline {
       stage('Install dependencies'){
         steps {
           echo ("start install")
+          script{
+            def data = [
+              "firstname": "Aan abdul"
+              "gi apa": "Gini ja"
+            ]
+            writeJSON(fule: "data.json", json: data)
+          }
           // sh("npm install")
           // echo ("end install")
         }
