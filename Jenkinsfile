@@ -4,7 +4,7 @@ pipeline {
       stage('Install dependencies'){
         steps {
           echo ("start install")
-          sh("npm install")
+          // sh("npm install")
           echo ("end install")
         }
         stage('Test Script'){
