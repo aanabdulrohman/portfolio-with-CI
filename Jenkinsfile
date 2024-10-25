@@ -3,7 +3,7 @@ pipeline {
     stages {
       stage('Install dependencies'){
         steps {
-          npm install
+          necho 'test'
         }
       }
     }
