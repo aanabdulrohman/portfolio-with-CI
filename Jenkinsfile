@@ -5,8 +5,9 @@ pipeline {
         steps {
           echo ("start install")
           // sh("npm install")
-          echo ("end install")
+          // echo ("end install")
         }
+      stages {
         stage('Test Script'){
           steps {
             echo ("start script")
@@ -16,6 +17,7 @@ pipeline {
             }
           }
         }
+      }
       }
     }
 }
